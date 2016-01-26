@@ -1,0 +1,122 @@
+<section id="home_bg">
+    <div class="height_70"></div>
+    <div class="m_container">
+        <div class="grid_50">
+            <legend>Find us</legend>
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="300" src="https://maps.google.com/maps?hl=en&q=No. 19, Jalan PJU 1A/18, Taman Perindustrian Jaya&ie=UTF8&t=roadmap&z=14&iwloc=B&output=embed">
+                <div><small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small></div>
+                <div><small><a href="http://buyproxies.io/">buyproxies.io</a></small></div>
+            </iframe>
+        </div>
+
+        <div class="grid_50">
+            <div class="well bs-component">
+                <form class="form-horizontal" name="contactUsForm" ng-submit="contactUsForm.$valid && submit()" novalidate>
+                    <fieldset>
+                        <legend>Please send us a message</legend>
+                        <div ng-show="isSubmitInProgress()" class="three-quarters-loader">
+                            Loading…
+                        </div>
+                        <div ng-show="isShowMsgSuccess()" class="alert alert-success" role="alert">
+                            <strong>Your request is submitted successful.</strong> We will get back to you shortly.
+                        </div>
+                        <div ng-show="isShowMsgFail()" class="alert alert-danger" role="alert">
+                            <strong>Sorry! We are having some technical issue.</strong> For your inquiry, please directly call us +6013 932 8820 or +6016 666 8820. Sorry for the inconvenient.
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <div ng-show="contactUsForm.$submitted">
+                                    <label ng-show="contactUsForm.custCompanyName.$error.required" class="control-label error" for="custCompanyName">Please fill in your company name</label>
+                                </div>
+                                <input type="text" ng-model="data.customer_company_name" ng-disabled="isSubmitInProgress()" class="form-control" name="custCompanyName" placeholder="Your Company Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <div ng-show="contactUsForm.$submitted">
+                                    <label ng-show="contactUsForm.custName.$error.required" class="control-label error" for="custCompanyName">Please fill in your name</label>
+                                </div>
+                                <input type="text" ng-model="data.customer_name" ng-disabled="isSubmitInProgress()" class="form-control" name="custName" placeholder="Your Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <div ng-show="contactUsForm.$submitted">
+                                    <label ng-show="contactUsForm.custContactNumber.$error.required" class="control-label error" for="custCompanyName">Please fill in your contact number</label>
+                                </div>
+                                <input type="text" ng-model="data.customer_contact_number" ng-disabled="isSubmitInProgress()" class="form-control" name="custContactNumber" placeholder="Your Contact Number" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <div ng-show="contactUsForm.$submitted">
+                                    <label ng-show="contactUsForm.custEmail.$error.required" class="control-label error" for="custCompanyName">Please fill in your email address</label>
+                                    <label ng-show="contactUsForm.custEmail.$invalid" class="control-label error" for="custCompanyName">Your email address seem like incorrect</label>
+                                </div>
+                                <input type="email" ng-model="data.customer_email" ng-disabled="isSubmitInProgress()" class="form-control" name="custEmail" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <select ng-model="data.machine_type" ng-disabled="isSubmitInProgress()" class="form-control" id="select" name="machineType" required>
+                                    <option value="Any">Machine Type: Any</option>
+                                    <option value="Forlift Trucks">Forklift Trucks</option>
+                                    <option value="Reach Trucks">Reach Trucks</option>
+                                    <option value="Power Pallet Trunks">Power Pallet Trunks</option>
+                                    <option value="Hand Pallet Trucks">Hand Pallet Trucks</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <select ng-model="data.transmission_type" ng-disabled="isSubmitInProgress()" class="form-control" id="select" name="transmissionType" required>
+                                    <option value="Any">Transmission: Any</option>
+                                    <option value="Battery">Battery</option>
+                                    <option value="Diesal">Diesel</option>
+                                    <option value="Petrol">Petrol</option>
+                                    <option value="LPG">LPG</option>
+                                </select>
+                            </div>
+                        </div> <div class="form-group">
+                            <div class="col-lg-12">
+                                <select ng-model="data.capacity" ng-disabled="isSubmitInProgress()" class="form-control" id="select" name="capacity" required>
+                                    <option value="Any">Capacity (KG): Any</option>
+                                    <option value="1500KG - 2000KG">1500KG - 2000KG</option>
+                                    <option value="2500KG - 3000KG">2500KG - 3000KG</option>
+                                    <option value="3500KG - 4000KG">3500KG - 4000KG</option>
+                                    <option value="4500kg - 5000KG">4500kg - 5000KG</option>
+                                    <option value="ABOVE 5000KG">ABOVE 5000KG</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <div ng-show="contactUsForm.$submitted">
+                                    <label ng-show="contactUsForm.message.$error.required" class="control-label error" for="custCompanyName">Please fill in a message</label>
+                                </div>
+                                <textarea ng-model="data.message" ng-disabled="isSubmitInProgress()" class="form-control" rows="5" name="message" placeholder="Please leave your message to us here." required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12 action">
+                                <div ng-show="contactUsForm.$submitted">
+                                    <label ng-show="contactUsForm.recaptcha_response_field.$error.required" class="control-label error" for="custCompanyName">Please fill in security code below</label>
+                                    <label ng-show="isShowCaptchaInvalid() && !contactUsForm.recaptcha_response_field.$error.required" class="control-label error" for="custCompanyName">Security code is invalid. Please try again</label>
+                                </div>
+                                <div re-captcha class="recaptcha" ng-model="security.captcha"></div>
+                                <div class="action-command">
+                                    <button type="button" ng-click="reset()" ng-disabled="isSubmitInProgress()" class="btn btn-default">Clear</button>
+                                    <button type="submit" ng-disabled="isSubmitInProgress()" class="btn btn-primary ">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="clear_both"></div>
+</section>

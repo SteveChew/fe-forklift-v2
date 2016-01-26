@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html ng-app="forklift">
+    <head>
+        <title>Forklift Malaysia | Forklift Rental |Forklift Sales | Pallet Trucks | Reach Trucks</title>
+        <meta name="keywords" content="forklift Malaysia,forklift rental,forklift repair,forklift sale,forklift for rent,forklift sales,rent forklift,forklift battery,forklift price,forklift rental service,forklift malaysia, malaysia forklift, forklift selangor, sewa forklift, beli forklift, forklift,forklift rental malaysia,rent forklift,forklift malaysia, battery, electric, reach trucks, lift truck, hand pallet trucks,forklift supplier,forklift rental malaysia,rent a forklift,toyota forklift malaysia,forklift supplier malaysia,forklift price malaysia,,rental forklift malaysia，forklift rental price malaysia，forklift in malaysia，forklift company in malaysia，used forklift malaysia,forklift price,forklift price malaysia, forklift rental in shah alam, forklift rental in subang jaya, forklift rental in petaling jaya, forklift rental in Kajang,forklift rental in Klang, forklift rental in Selayang,forklift rental in Sepang,forklift rental in rawang,forklift rental in kajang,forklift rental in serdang,forklift rental in putrajaya,forklift rental in cyberjaya,forklift rental in ampang,forklift rental in selayang,forklift rental in gombak,forklift rental in glenmarie,forklift rental in kepong,forklift rental in kuala lumpur,  forklift rental in puchong, forklift rental in bangi, forklift rental in damansara, forklift rental in cheras">
+        <meta name="description" content="TWS Marketing - We specialized in Sales, Rental &amp; Repair all ranges of Diesel Forklift, Petrol/LPG Forklift, Battery Forklift, Pallet Trucks, Reach Trucks, Stacker &amp; etc in Malaysia. Visit now!">
+
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/angular-re-captcha.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="http://css-spinners.com/css/spinner/three-quarters.css" type="text/css">
+        
+    </head>
+    <body ng-controller="MainController as main">
+        <header>
+            <div class="m_container height_120">
+                <div class="grid_33 height_120">
+                    <div class="company_logo">
+                        <h4>TWS Forklift Service Sdn. Bhd.</h4>
+                        <div class="highlight"><span>F O R K L I F T&nbsp;&nbsp;&nbsp;S P E C I A L L I S T</span></div>
+                        <div class="txt_right">
+                            <span>(940834-H)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_67 height_120">
+                    <div class="menu">
+                        <ul class="navbar_1">
+                            <li>
+                                <a href ng-click="main.setMenu('home')">Home</a>
+                            </li>
+                            <li>
+                                <a href ng-click="main.setMenu('aboutus')">About Us</a>
+                            </li>
+                            <li>
+                                <a href ng-click="main.setMenu('service')">Service/Repair</a>
+                            </li>
+                            <li>
+                                <a href ng-click="main.setMenu('sales')">Sales/Rental</a>
+                            </li>
+                            <li>
+                                <a href ng-click="main.setMenu('contactus')">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+        
+        <home ng-show="main.isSet('home')"></home>
+        <about-us ng-show="main.isSet('aboutus')"></about-us>
+        <service ng-show="main.isSet('service')"></service>
+        <sales ng-show="main.isSet('sales')"></sales>
+        <contactus ng-show="main.isSet('contactus')"></contactus>
+        <repair ng-show="main.isSet('repair')"></repair>
+        
+        <footer>
+            <div class="height_35"></div>
+            <div class="m_container">
+                <div class="box">
+                    <img class="icon" src="images/phone.gif" />
+                    <div class="content">
+                        <p>
+                            <b>Call</b><br/>
+                            T : +603 7859 8820<br/>
+                            M : +6013 932 8820, +6016 666 8820<br/>
+                            F : +603 7859 8820<br/>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <img class="icon" src="images/pinpin.gif" />
+                    <div class="content">
+                        <p>
+                            <b>Address</b><br/>
+                            No. 19, Jalan PJU 1A/18,<br/>
+                            Taman Perindustrian Jaya,<br/>
+                            47301 Petaling Jaya, Selangor<br/>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <img class="icon" src="images/plane.gif" />
+                    <div class="content">
+                        <p>
+                            <b>Email</b><br/>
+                            seng@twsforklift.com<br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="m_container">
+                <small>Copyright © 2015 TWS Forklift Service Sdn Bhd. All Rights Reserved.</small>
+            </div>
+        </footer>
+    </body>
+</html>

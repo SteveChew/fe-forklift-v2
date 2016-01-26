@@ -1,0 +1,90 @@
+header {min-height: 100px;}
+section {min-height: 50px; padding-bottom: 10px;}
+footer {min-height: 50px; font-size: 14px; background-color: #6CD9E4;}
+body {font-size: 14px !important;}
+
+.g-recaptcha {display: inline-block; vertical-align: bottom;}
+
+.m_container {width: 100%; min-width: 970px; min-height: 50px; margin-left: auto; margin-right: auto; padding: 0 10px; position: relative; border: 0px solid red;}
+
+.clear_both {clear: both;}
+
+.grid_16,
+.grid_17,
+.grid_25,
+.grid_33,
+.grid_34,
+.grid_50,
+.grid_66,
+.grid_67 {display: inline-block; float: left; position: relative; border: 0px solid black; padding: 0px 30px;}
+
+.grid_16 {width: 16%;}
+.grid_17 {width: 17%;}
+.grid_25 {width: 25%;}
+.grid_33 {width: 33%;}
+.grid_34 {width: 34%;}
+.grid_50 {width: 50%;}
+.grid_66 {width: 66%;}
+.grid_67 {width: 67%;}
+
+.height_120 {height: 120px;}
+.heigth_mcontent {height: 300px;}
+.height_70 {height: 70px;}
+.height_35 {height: 35px;}
+.height_30 {height: 30px;}
+
+.pad_40_20 {padding: 40px 20px;}
+
+.m_content {margin-left: 10%;}
+.m_content ul {padding: 15px 0px 10px 60px;}
+.m_content a.btn {margin-right: 30px;}
+
+.txt_left {text-align: left;}
+.txt_center {text-align: center;}
+.txt_right {text-align: right;}
+
+.vert_bottom {vertical-align: bottom;}
+
+.company_logo {width: 300px; margin-top: 35px;}
+.company_logo .highlight{height: 30px; line-height: 30px; background-color: #0066FF; vertical-align: middle; text-align: center; font-weight: bold; color: white; margin-top: -10px;}
+
+.menu {float: right ; margin-top: 90px;}
+.navbar_1 {list-style-type: none; margin-left: 0; margin-right: 0;}
+.navbar_1 li {display: inline; padding: 0 20px;}
+.navbar_1 li a {color: #585757; text-decoration: none;}
+.navbar_1 li a:hover {color: #0066FF;}
+
+.brand {padding-left: 5px; padding-right: 5px; margin-left: auto; margin-right: auto; text-align: center;}
+.brand .img_content {display: inline-block; width: 16%;}
+img.resize-m-width {width: 150px; height: auto; margin-right: 25px;}
+img.resize-m-height {width: auto; height: 100px;  margin-right: 25px;}
+img.resize-m-auto {width: auto; height: auto;  margin-right: 25px;}
+img.width_250 {width: 250px; height: : auto; margin-left: 20px;}
+img.rightside {width: 270px; position: absolute; bottom: 0; margin-bottom: -10px;}
+
+#map {width: 500px; height: 400px;}
+
+#home_bg {background: url(/images/slider-bg.png)0 100% repeat-x;}
+
+section.mini-content {border: 1px solid #F4F4F4; min-height: 0px;}
+section.mini-content .m_container {padding: 10px;}
+
+footer .m_container {text-align: center;}
+footer .box {display: inline-block; vertical-align: top; text-align: left; padding-right: 40px; padding-bottom: 15px;}
+footer .content {display: inline-block;}
+footer .icon {width: 35px; height: 35px; vertical-align: top;}
+
+.form-control {height: 30px !important; padding: 4px 8px !important; font-size: 14px !important;}
+.form-horizontal .control-label {padding-top: 4px !important;}
+.well {padding: 0px !important; background: none !important; border: 0px !important; -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0.05) !important; box-shadow: inset 0 0px 0px rgba(0,0,0,0.05) !important;}
+
+select.form-control {width: 40% !important;}
+textarea.form-control {height: auto !important;}
+.action {position: relative;}
+.recaptcha {position: relative; display: inline-block; vertical-align: bottom;}
+.action-command {position: relative; display: inline-block; vertical-align: bottom;}
+
+.ng-invalid.ng-dirty {border-color: #d9534f;}
+.ng-valid.ng-dirty {border-color: #3fad46;}
+label.error {color: #d9534f;}
+.ng-submitted .ng-invalid-required {border-color: #d9534f;}

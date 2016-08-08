@@ -124,7 +124,7 @@
                     
                     var req = {
                         method: 'POST',
-                        url: 'http://circus-tersaproject.rhcloud.com/mail/send/mime',
+                        url: 'http://circus-bemail.rhcloud.com/mail/send/mime',
                         headers: {
                             'Content-Type': 'application/json',
                             'Application': 'application/json'
@@ -222,7 +222,7 @@
                     
                     var req = {
                         method: 'POST',
-                        url: 'http://circus-tersaproject.rhcloud.com/mail/send/mime',
+                        url: 'http://circus-bemail.rhcloud.com/mail/send/mime',
                         headers: {
                             'Content-Type': 'application/json',
                             'Application': 'application/json'
